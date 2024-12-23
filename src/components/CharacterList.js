@@ -100,7 +100,7 @@ function CharacterList() {
     setResults([]);
     setPage(1);
     speciesSet.current.clear();
-    setAvailableSpecies([{ label: 'All', value: '' }]);
+    setAvailableSpecies([{ label: translations[language].all, value: "" }]);
     loadMoreData(1);
   }, [statusFilter, speciesFilter, language]);
 
